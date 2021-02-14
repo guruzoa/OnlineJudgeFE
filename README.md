@@ -62,3 +62,26 @@ npm run dev
 ## 오픈소스 라이센스
 
 [MIT](http://opensource.org/licenses/MIT)
+
+## How-to install from linux server
+
+```shell
+sudo apt install nodejs
+sudo apt install npm
+sudo npm clean cache -f
+
+sudo npm install -g n
+```
+
+```
+JudgeFE source 코드에서
+```shell
+sudo npm install
+NODE_ENV=development sudo npm run build:dll
+export TARGET=http://192.168.220.128/
+npm run dev
+```
+
+```shell
+jupyter-notebook --ip='192.168.220.128'
+```
